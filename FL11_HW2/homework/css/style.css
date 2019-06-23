@@ -19,14 +19,10 @@
 
 .tm-banner {
 	height:180px;
-	width:100%;
 }
 
-.tm-banner-inner > * {
-	transform:scale(0.8);
-}
-
-.container,.flex-item {
+.container,
+.flex-item {
 	min-width:100%;
 	min-height:100%;
 }
@@ -35,12 +31,15 @@ section::before {
 	visibility:hidden;
 }
 
-body,.tm-main-content,.flex-item {
+body,
+.tm-main-content,
+.flex-item {
 	padding:0;
 	margin:0;
 }
 
-body p,li>a {
+body p,
+li>a {
 	font-size:14px;
 	color:#000;
 }
@@ -52,17 +51,13 @@ nav,.tm-sidebar,.tm-team-img,#about,.boxes,.img-fluid,.carousel-indicators,secti
 h2 {
 	text-align:center;
 	font-size:24px;
-	color:#87cefa!important;
+	color:#87cefa;
 	text-transform:uppercase;
-	font-weight:300;
+	font-weight:300!important;
 }
 
 ol {
 	list-style:none;
-}
-
-li>a {
-	color:#000;
 }
 
 li::first-letter {
@@ -80,13 +75,17 @@ li:nth-child(even) {
 	padding-left:150px;
 }
 
-#tmcarousel {
+#tmcarousel,
+.padding-medium,
+.carousel-description {
 	padding:1.5em;
 }
 }
 
 @media screen {
-section,#home,nav {
+section,
+#home,
+nav {
 	box-shadow:0 0 10px 0 rgba(61,55,61,0.7);
 }
 
@@ -195,7 +194,8 @@ section::before {
 	padding-left:2px;
 }
 
-.padding-medium a:visited,.padding-medium a:hover {
+.padding-medium a:visited,
+.padding-medium a:hover {
 	color:#ffb347;
 }
 
@@ -222,7 +222,8 @@ input[type=text],[type=email] {
 	height:3em;
 }
 
-.form-control:focus,#contact_email:focus {
+.form-control:focus,
+#contact_email:focus {
 	background-color:#76cdd7;
 	color:#fff;
 	border:3px solid #87cefa;

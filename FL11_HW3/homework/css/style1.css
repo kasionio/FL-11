@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  background: #fff; }
+
+.header .header_heading:after, .section .section_text:after, .section .section_banner_heading:after {
+  display: block;
+  content: '';
+  height: 30px;
+  background: #14A0C7;
+  position: relative;
+  bottom: 0.4em;
+  z-index: -1; }
+
+.header {
+  position: relative;
+  color: #21232E;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 16px;
+  line-height: 1;
+  background-image: url("../img/m-h-day.jpg");
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border-bottom-right-radius: 700px 40%;
+  z-index: -2; }
+  .header .header-wrap {
+    height: 900px;
+    width: 600px; }
+    .header .header-wrap .landing-logo {
+      width: 70px;
+      padding: 30px 200px; }
+      .header .header-wrap .landing-logo p {
+        padding-left: 120px;
+        margin: -50px; }
+        .header .header-wrap .landing-logo p span {
+          padding-top: 20px; }
+  .header .header_heading {
+    font-size: 90px;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 700;
+    padding-left: 200px;
+    width: 650px;
+    z-index: 0; }
+    .header .header_heading:after {
+      width: 380px; }
+  .header .header_text {
+    width: 800px;
+    font-size: 20px;
+    padding-left: 200px;
+    word-spacing: px;
+    line-height: 1.6; }
+  .header .header_button {
+    font-family: "Source Sans Pro", sans-serif;
+    width: 180px;
+    height: 60px;
+    background-color: #699900;
+    font-size: 22px;
+    color: #fff;
+    font-weight: 700;
+    margin-left: 200px;
+    margin-top: 100px;
+    border: none; }
+    .header .header_button:hover {
+      background-color: #429bf4; }
+
+.section .section_text {
+  text-align: center;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 60px;
+  font-weight: 600; }
+  .section .section_text:after {
+    width: 270px;
+    margin-left: 970px;
+    bottom: 30px;
+    height: 20px; }
+.section .section_card_wrap {
+  text-align: center;
+  margin-left: 100px;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center; }
+  .section .section_card_wrap .section_card {
+    background-color: grey;
+    width: 200px; }
+    .section .section_card_wrap .section_card .section_card_img {
+      height: 294px;
+      width: 444px;
+      border-radius: 7px; }
+.section .section_banner {
+  width: 900px;
+  background: linear-gradient(to right, #2D5BD8, #61911B);
+  height: 120px;
+  position: absolute;
+  bottom: -60px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 5px;
+  z-index: 2; }
+.section .section_banner_heading {
+  font-size: 24px;
+  margin-bottom: 0;
+  margin-top: 0;
+  z-index: 1;
+  position: relative; }
+  .section .section_banner_heading:after {
+    width: 380px; }

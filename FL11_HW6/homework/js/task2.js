@@ -1,6 +1,6 @@
-const a = +prompt('Enter the first length of the side a of triangle');
-const b = +prompt('Enter the second length of the side b of triangle');
-const c = +prompt('Enter the third length of the side c of triangle');
+const a = +prompt('Enter the first length of the triangle side a');
+const b = +prompt('Enter the second length of the triangle side b');
+const c = +prompt('Enter the third length of the triangle side c');
 
 if (Number.isNaN(a) || Number.isNaN(b) || Number.isNaN(c) || a <= 0 || b <= 0 || c <= 0) {
   console.log('Length must have a positive numeric value');

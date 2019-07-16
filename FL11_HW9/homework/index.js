@@ -52,7 +52,7 @@ const filterArray = (arr, func) => {
 }
 
 // Task #5 
-const showFormattedDate = (arg) => {
+const showFormattedDate = arg => {
     let date = arg.toLocaleDateString('en-US', {  
     day : 'numeric',
     month : 'short'
@@ -63,7 +63,7 @@ const showFormattedDate = (arg) => {
 showFormattedDate(new Date('2019-01-27T01:10:00')) 
 
 // Task #6
-const canConvertToDate = (date) => {
+const canConvertToDate = date => {
   const year = date.getFullYear();
   const month = date.getMonth();
   const day = date.getDate();
@@ -79,8 +79,14 @@ const daysBetween = (date1, date2) => {
 }
 
 // Task #8
-
-
+const getAmountOfAdultPeople = data => {
+  const daysInEighteenYears = 6575;
+  let result = [];
+  result = filterArray(data, function (el) {
+    return daysBetween(new Date(el[' birthday ']), Date.now()) > daysInEighteenYears;
+  });
+  return result.length;
+}
 
 // Task #9
 const ObjKeys = obj => {

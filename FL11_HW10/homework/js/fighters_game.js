@@ -54,14 +54,20 @@ function Fighter(props) {
 }
 
 function battle(fighter1, fighter2) {
-
-  let attacker = fighter1;
-  let defender = fighter2;
-  while (fighter2.getHealth() > 0 && fighter1.getHealth() > 0) {
-    attacker.attack(defender);
-    console.log(`${attacker.getName()} attack ${defender.getName()}`);
-  }
-  if (defender.getHealth() === 0) {
-    console.log(`${defender.getName()} dead and can't fight`);
+  
+    while (fighter1.getHealth() > 0 || fighter2.getHealth() > 0) {
+    fighter1.attack(fighter2);
+    console.log(`${fighter1.getName()} attack ${fighter2.getName()}`);
+    fighter2.attack(fighter1);
+    console.log(`${fighter2.getName()} attack ${fighter1.getName()}`);
+   }
+  if (fighter1.getHealth() === 0) {
+    console.log(`${fighter1.getName()} dead and can't fight`);
+    fighter1.addLoss();
+    fighter2.addWin();
+  } else if (fighter2.getHealth() === 0) {
+    console.log(`${fighter1.getName()} dead and can't fight`);
+    fighter2.addLoss();
+    fighter1.addWin();
   }
 }
